@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Los Santos Customs</title>
+
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (!$clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-left">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                        </div>
+                        <div class="menu">
+                            <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+                            <ul class="nav" id="nav">
+
+                                <li><a href="shop.html">BMW</a></li>
+                                <li><a href="shop2.html">Audi</a></li>
+                                <li><a href="shop3.html">Mazda</a></li>
+
+                                <li><a href="contact.php">Contacto</a></li>
+                                <li><a href="login.php">Apartar</a></li>
+
+
+                                <div class="clear"></div>
+                            </ul>
+                            <script type="text/javascript" src="js/responsive-nav.js"></script>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="clear"></div>
+                    </ul>
+                    </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="main">
+        <div class="shop_top">
+            <div class="container">
+                <div class="row shop_box-top">
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW M4 Competition Coupé.html">
+                            <img src="images/pic8.jpg" class="img-responsive" alt="" />
+                            <span class="new-box">
+						<span class="new-label">New</span>
+                            </span>
+
+                            <div class="shop_desc">
+                                <h3><a href="BMW M4 Competition Coupé.html">BMW M4 Competition Coupé</a></h3>
+                                <span class="actual">$459.000.000</span><br>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW Serie 4 Convertible Pro.html">
+                            <img src="images/pic7.jpg" class="img-responsive" alt="" />
+                            <span class="new-box">
+						<span class="new-label">New</span>
+                            </span>
+                            <div class="shop_desc">
+                                <h3><a href="BMW Serie 4 Convertible Pro.html">BMW Serie 4 Convertible Pro</a></h3>
+                                <span class="actual">$259.900.000</span><br>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW M440i Coupé.html">
+                            <img src="images/pic6.jpg" class="img-responsive" alt="" />
+                            <span class="new-box">
+						<span class="new-label">New</span>
+                            </span>
+
+                            <div class="shop_desc">
+                                <h3><a href="BMW M440i Coupé.html">BMW M440i Coupé</a></h3>
+                                <span class="actual">$239.900.000</span><br>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW Serie 4 Convertible.html">
+                            <img src="images/pic5.jpg" class="img-responsive" alt="" />
+
+                            <div class="shop_desc">
+                                <h3><a href="BMW Serie 4 Convertible.html">BMW Serie 4 Convertible</a></h3>
+
+
+                                <span class="actual">$189.900.000</span><br>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW Serie 4 Coupé.html">
+                            <img src="images/pic9.jpg" class="img-responsive" alt="" />
+
+                            <div class="shop_desc">
+                                <h3><a href="BMW Serie 4 Coupé.html">BMW Serie 4 Coupé</a></h3>
+
+                                <span class="actual">$197.900.000</span><br>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW Serie 3 Híbrido.html">
+                            <img src="images/pic10.jpg" class="img-responsive" alt="" />
+
+
+
+                            <div class="shop_desc">
+                                <h3><a href="BMW Serie 3 Híbrido.html">BMW Serie 3 Híbrido </a></h3>
+
+                                <span class="actual">$184.900.000</span><br>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW M3 Competition.html">
+                            <img src="images/pic11.jpg" class="img-responsive" alt="" />
+
+                            <div class="shop_desc">
+                                <h3><a href="BMW M3 Competition.html">BMW M3 Competition</a></h3>
+
+
+                                <span class="actual">$399.900.000</span><br>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="BMW Serie 2 Cabrio.html">
+                            <img src="images/pic12.jpg" class="img-responsive" alt="" />
+
+
+                            <div class="shop_desc">
+                                <h3><a href="BMW Serie 2 Cabrio.html">BMW Serie 2 Cabrio</a></h3>
+
+
+                                <span class="actual">$169.900.000</span><br>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
